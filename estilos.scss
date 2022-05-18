@@ -1,9 +1,17 @@
+//variable// 
+$color-principal:#FFC107;
+$color-secundario:#2FEB7D;
+$color-terciario:#25F6F2;
+
+$fuente-size1:30px;
+
 *{
     padding: 0;
     margin: 0;
 }
+
 body{
-    background-color:#FFC107;
+    background-color:$color-principal;
     font-family: Arial, Helvetica, sans-serif;
 }
 /*BANNER*/
@@ -101,9 +109,6 @@ footer p{
     right: 3%;
 }
 /*PAGINA QUIENES SOMOS*/   
-h4{
-    
-}
 
 h3{
     background-color: rgb(128, 128, 128, 0.6);
@@ -117,7 +122,6 @@ h3{
     padding-left: 100px;
     padding-right: 100px;
     font-size: 30px;
-    background-color:#3ec34f ;
 }
 .contun{
     text-align: center;
