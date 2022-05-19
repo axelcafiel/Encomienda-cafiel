@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #FFC107;
+  background-color: #EDBB07;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -50,7 +50,7 @@ legend {
 /*TITULO*/
 h1 {
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
 }
 h1 b {
   color: aquamarine;
@@ -158,7 +158,7 @@ h3 {
 
 .barco3 {
   grid-area: barco3;
-  width: 98%;
+  width: 100%;
   height: 100%;
 }
 
@@ -187,7 +187,7 @@ h3 {
 }
 
 .lol:hover {
-  transform: scale(1.07);
+  transform: scale(1.02);
   transition: all 0.75s;
 }
 
@@ -219,6 +219,28 @@ h3 {
 .qr {
   width: 100%;
   height: 600px;
+}
+
+.dale, .dale2 {
+  width: 100%;
+  border: solid salmon;
+  height: 200px;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 30px;
+  background-color: #2FEB7D;
+}
+
+.dale3 {
+  height: 300px;
+  width: 100%;
+  background-color: #2FEB7D;
+}
+
+.dale3 p {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10%;
 }
 
 /*Medias Querys*/

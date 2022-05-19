@@ -1,9 +1,17 @@
 //variable// 
-$color-principal:#FFC107;
+$color-principal:#EDBB07;
 $color-secundario:#2FEB7D;
 $color-terciario:#25F6F2;
-
 $fuente-size1:30px;
+
+$fuentes:(
+    h1:2rem,
+    h2:4rem,
+    h3:5rem,
+);
+
+$h1: map-get($fuentes, h1);
+
 
 *{
     padding: 0;
@@ -54,7 +62,7 @@ legend{
 /*TITULO*/
 h1{
     text-align: center;
-    font-size: 30px;
+    font-size: $h1;
     b{
         color:aquamarine;
     }
@@ -180,7 +188,7 @@ h3{
     height: 100%;
 }
 .lol:hover{
-    transform: scale(1.07);
+    transform: scale(1.02);
     transition: all 0.75s;
 }
 
@@ -213,6 +221,31 @@ h3{
     height: 600px;
 }
 
+.dale{
+    width: 100%;
+    border: solid salmon;
+    height: 200px;
+    text-align: center;
+    padding-top: 60px;
+    font-size: $fuente-size1;
+    background-color: $color-secundario;
+}
+.dale2{
+    @extend .dale;
+}
+@mixin sizes ($heigth, $width, $bgcolor) {
+    height: $heigth;
+    width: $width;
+    background-color: $bgcolor;
+}
+.dale3{
+    @include sizes(300px, 100%, $color-secundario )
+}
+.dale3 p{
+    text-align: center;
+    font-size: $fuente-size1;
+    padding-top: 10%;
+}
 
 /*Medias Querys*/
 
