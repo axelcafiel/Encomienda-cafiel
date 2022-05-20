@@ -1,203 +1,279 @@
-//variable// 
-$color-principal:#EDBB07;
-$color-secundario:#2FEB7D;
-$color-terciario:#25F6F2;
-$fuente-size1:30px;
+//variable//
+$color-principal: #edbb07;
+$color-secundario: #2feb7d;
+$color-terciario: #25f6f2;
+$fuente-size1: 30px;
 
-$fuentes:(
-    h1:2rem,
-    h2:4rem,
-    h3:5rem,
+$fuentes: (h1: 2rem,
+    h2: 4rem,
+    h3: 5rem,
 );
 
 $h1: map-get($fuentes, h1);
 
-
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-    background-color:$color-principal;
+body {
+    background-color: $color-principal;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*BANNER*/
-.banner{
+.banner {
     width: 100%;
     height: 600px;
     margin: auto;
     background-image: url(./img/foto\ final\ recortada.jpg);
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
 }
+
 /*Formulario banner*/
-.cont{
-    background-color: rgb(128, 128, 128, 0.7);
-    width: 40%;
-    height: 80%;
-    padding: 3rem;
-    border-radius: 0.5rem;
+.form {
+    background-color: rgb(237, 187, 7, 0.6);
+    border-radius: 5%;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
 }
-legend{
-    color:aliceblue;
-    font-size: 3rem;
-    margin: 1rem;
+
+.title {
+    color: #020101;
     text-align: center;
-}
-.formulario{
-    text-align: center;
-}
-.form_label{
-    display: inline-block;
-    width: 50%;
-    padding: 10px;
-    color:aliceblue;
-    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
     font-weight: 600;
+    margin-top: 30px;
 }
 
+.subtitle {
+    color: #020101;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
 
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic1 {
+    margin-top: 40px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.placeholder {
+    color: black;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.submit {
+    background-color: #eee;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+}
+
+.submit:active {
+    background-color: #303245;
+}
 
 /*TITULO*/
-h1{
+h1 {
     text-align: center;
     font-size: $h1;
-    b{
-        color:aquamarine;
+
+    b {
+        color: aquamarine;
     }
 }
+
 /*Info pagina*/
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
 }
-.container__img{
+
+.container__img {
     width: 25%;
     box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 29%);
 }
 
-.aboutUs{
+.aboutUs {
     width: 80%;
     margin: 2rem auto;
 }
-.aboutUs__container{
+
+.aboutUs__container {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.illustration{
+
+.illustration {
     width: 100%;
 }
-.aboutUs__container--reverse{
+
+.aboutUs__container--reverse {
     flex-direction: row-reverse;
 }
+
 /*FOOTTER*/
 
-footer{
+footer {
     background-color: black;
     padding: 2.5rem;
 }
-footer p{
+
+footer p {
     color: #fff;
     font-weight: 600;
     text-align: center;
     font-size: 20px;
 }
-.fa-whatsapp{
+
+.fa-whatsapp {
     color: white;
     background-color: #3ec34f;
     padding: 0.6rem;
     font-size: 2rem;
     border-radius: 50%;
-    position:fixed;
+    position: fixed;
     bottom: 5%;
     right: 3%;
 }
-/*PAGINA QUIENES SOMOS*/   
 
-h3{
+/*PAGINA QUIENES SOMOS*/
+
+h3 {
     background-color: rgb(128, 128, 128, 0.6);
     font-size: 60px;
     text-align: center;
 }
 
-.text{
+.text {
     width: 100%;
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
     font-size: 30px;
 }
-.contun{
+
+.contun {
     text-align: center;
     font-size: 0px;
-
-    
 }
-.grid{
-    display:grid;
+
+.grid {
+    display: grid;
     margin: 0 auto;
-    padding:10px;
+    padding: 10px;
 }
 
-.grid-area-galeria{
+.grid-area-galeria {
     grid-template-areas:
-    "barco1 barco2 barco3 barco3"
-    "barco1 barco4 barco3 barco3"
-    "barco5 barco4 barco6 barco7";
+        "barco1 barco2 barco3 barco3"
+        "barco1 barco4 barco3 barco3"
+        "barco5 barco4 barco6 barco7";
 
     grid-template-columns: 1fr 2fr 1fr 1fr;
     gap: 1rem;
 }
-.barco1{
+
+.barco1 {
     grid-area: barco1;
     width: 100%;
     height: 100%;
 }
-.barco2{
+
+.barco2 {
     grid-area: barco2;
     width: 100%;
     height: 100%;
 }
-.barco3{
+
+.barco3 {
     grid-area: barco3;
     width: 100%;
     height: 100%;
 }
-.barco4{
+
+.barco4 {
     grid-area: barco4;
     width: 100%;
     height: 100%;
 }
-.barco5{
+
+.barco5 {
     grid-area: barco5;
     width: 100%;
     height: 100%;
 }
-.barco6{
+
+.barco6 {
     grid-area: barco6;
     width: 100%;
     height: 100%;
 }
-.barco7{
+
+.barco7 {
     grid-area: barco7;
     width: 100%;
     height: 100%;
 }
-.lol:hover{
+
+.lol:hover {
     transform: scale(1.02);
     transition: all 0.75s;
 }
 
 /*NACIONAL*/
-.contenedormapa{
+.contenedormapa {
     display: flex;
     justify-content: space-between;
 }
-.nacionalt{
+
+.nacionalt {
     text-align: center;
     font-size: 20px;
     width: 50%;
@@ -205,23 +281,24 @@ h3{
 
 /*Internacional*/
 
-
-.contenedormapa2{
+.contenedormapa2 {
     display: flex;
     justify-content: space-between;
 }
-.internacionalt{
+
+.internacionalt {
     text-align: center;
     font-size: 20px;
     width: 50%;
 }
+
 /*CONTACTO*/
-.qr{
+.qr {
     width: 100%;
     height: 600px;
 }
 
-.dale{
+.dale {
     width: 100%;
     border: solid salmon;
     height: 200px;
@@ -230,42 +307,50 @@ h3{
     font-size: $fuente-size1;
     background-color: $color-secundario;
 }
-.dale2{
+
+.dale2 {
     @extend .dale;
 }
-@mixin sizes ($heigth, $width, $bgcolor) {
+
+@mixin sizes($heigth, $width, $bgcolor) {
     height: $heigth;
     width: $width;
     background-color: $bgcolor;
 }
-.dale3{
-    @include sizes(300px, 100%, $color-secundario )
+
+.dale3 {
+    @include sizes(300px, 100%, $color-secundario);
 }
-.dale3 p{
-    text-align: center;
-    font-size: $fuente-size1;
-    padding-top: 10%;
+
+.dale3 {
+    p {
+        text-align: center;
+        font-size: $fuente-size1;
+        padding-top: 10%;
+    }
 }
 
 /*Medias Querys*/
 
-@media (max-width:768px){
-    .cont{
+@media (max-width: 768px) {
+    .cont {
         width: 100%;
         height: 100%;
         padding: 3rem;
         border-radius: 0.5rem;
     }
-    .grid{
+
+    .grid {
         display: inline-block;
         margin: 0 auto;
         padding: 50px;
     }
 }
-@media (max-width:320px){
-    .grid{
-        display:inline-block;
+
+@media (max-width: 320px) {
+    .grid {
+        display: inline-block;
         margin: 0 auto;
-        padding:50px;
+        padding: 50px;
     }
 }

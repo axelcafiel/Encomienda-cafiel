@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #EDBB07;
+  background-color: #edbb07;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,32 +19,88 @@ body {
 }
 
 /*Formulario banner*/
-.cont {
-  background-color: rgba(128, 128, 128, 0.7);
-  width: 40%;
-  height: 80%;
-  padding: 3rem;
-  border-radius: 0.5rem;
+.form {
+  background-color: rgba(237, 187, 7, 0.6);
+  border-radius: 5%;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 320px;
 }
 
-legend {
-  color: aliceblue;
-  font-size: 3rem;
-  margin: 1rem;
+.title {
+  color: #020101;
   text-align: center;
-}
-
-.formulario {
-  text-align: center;
-}
-
-.form_label {
-  display: inline-block;
-  width: 50%;
-  padding: 10px;
-  color: aliceblue;
-  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
   font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #020101;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.placeholder {
+  color: black;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.submit {
+  background-color: #eee;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #303245;
 }
 
 /*TITULO*/
@@ -228,13 +284,13 @@ h3 {
   text-align: center;
   padding-top: 60px;
   font-size: 30px;
-  background-color: #2FEB7D;
+  background-color: #2feb7d;
 }
 
 .dale3 {
   height: 300px;
   width: 100%;
-  background-color: #2FEB7D;
+  background-color: #2feb7d;
 }
 
 .dale3 p {
